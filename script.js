@@ -41,7 +41,7 @@ async function asyncReadFile(filename) {
 }
 
 function writeFile(txtFileName, data) {
-    fs.writeFile(txtFileName + ".txt", data, (err) => {
+    fs.writeFile("textFiles/" + txtFileName + ".txt", data, (err) => {
         if (err) throw err;
     });
 } 
